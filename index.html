@@ -6,21 +6,25 @@
     <title>Catálogo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script defer src="/scripts/script.js"></script>
+    <script defer src="scripts/script.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+            <a href="index.html">
+                <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+            </a>
             <!-- ! Barra de búsqueda -->
             <section>
-                <input id="searchBar" name="search" placeholder="Buscar" />
-                <button id="searchButton">
+                <input id="searchBar" name="search" placeholder="Buscar productos" />
+                <button id="searchButton" type="submit">
                     <i class="fa fa-search fa-2x" aria-hidden="true"></i>
                 </button>
             </section>
-            <i class="fa fa-shopping-cart fa-3x"></i>
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart fa-3x"></i>
+            </a>
         </nav>
     </header>
     <main>
