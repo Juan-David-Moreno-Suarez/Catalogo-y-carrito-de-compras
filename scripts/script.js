@@ -36,7 +36,7 @@ const lenovoLegionpro = new Item({
     id: 4,
     nombre: "Notebook Lenovo Legion Pro 16 negro 32GB de Ram - 1TB SSD - Intel ULTRA 9 Color Negro",
     categoria: "Computadores",
-    precio: 3899900,
+    precio: 12000000,
     imagen: "img/lenovolegionpro.png",
     descripcion: "Procesador: Intel Core Ultra 9 275HX. Versión del sistema operativo: 11. Nombre del sistema operativo: Windows. Capacidad de disco SSD: 1 TB. Capacidad total del módulo de memoria RAM: 32 GB. Con pantalla táctil: No. Resolución de la pantalla: 2560 px x 1600 px."
 });
