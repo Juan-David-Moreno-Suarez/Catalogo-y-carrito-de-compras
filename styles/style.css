@@ -1,0 +1,45 @@
+/* ? --------- Header --------------- */
+header {
+    background-color: #c098f5;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    section {
+        display: flex;
+        width: 40%;
+        height: 40px;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 50px;
+        padding-left: 10px;
+    }
+}
+
+#searchBar {
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    align-content: center;
+}
+#searchBar::placeholder {
+    font-size: 20px;
+}
+#searchBar:active {
+    
+}
+
+#searchButton {
+    height: 100%;
+    aspect-ratio: 1;
+    border: 0px;
+}
+
+/* ? ------------------------------- */
+
+/* * --------- Main --------------- */
+
+/* * ------------------------------- */
