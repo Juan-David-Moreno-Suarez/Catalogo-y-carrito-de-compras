@@ -36,7 +36,23 @@ const lenovoLegionpro = new Item({
     id: 4,
     nombre: "Notebook Lenovo Legion Pro 16 negro 32GB de Ram - 1TB SSD - Intel ULTRA 9 Color Negro",
     categoria: "Computadores",
-    precio: 3899900,
+    precio: 12000000,
     imagen: "img/lenovolegionpro.png",
     descripcion: "Procesador: Intel Core Ultra 9 275HX. Versión del sistema operativo: 11. Nombre del sistema operativo: Windows. Capacidad de disco SSD: 1 TB. Capacidad total del módulo de memoria RAM: 32 GB. Con pantalla táctil: No. Resolución de la pantalla: 2560 px x 1600 px."
+});
+const ipad = new Item({
+    id: 5,
+    nombre:"Ipad Apple 11 pulgadas 128 GB | Chip A16",
+    categoria: "Tablets",
+    precio: 2039000,
+    imagen: "img/ipad.png",
+    descripcion: "El iPad Apple 11 pulgadas con Chip A16 es un dispositivo tablet de alta gama que ofrece un rendimiento excepcional, una pantalla de alta calidad y una experiencia de usuario intuitiva. Ideal para productividad, entretenimiento y creatividad."
+});
+const xiaomiTablet= new Item({
+    id: 6,
+    nombre:"Xiaomi Tablet Pad 7 8gb/256gb",
+    categoria: "Tablets",
+    precio: 1799900,
+    imagen: "img/xiaomipad7.png",
+    descripcion: "El Xiaomi Pad 7 es un tablet de alta gama con pantalla de 12 pulgadas, procesador Snapdragon 8 Gen 1, memoria RAM de 8GB y almacenamiento interno de 256GB. Ideal para entretenimiento, productividad y multitarea."
 });
