@@ -19,6 +19,7 @@ nav {
         overflow: hidden;
         border-radius: 10px;
         padding-left: 20px;
+        box-shadow: 4px 3px var(--color1);
     }
     section:hover {
         border: 2px solid var(--color1);
@@ -50,6 +51,12 @@ nav {
     height: 100%;
     aspect-ratio: 1;
     border: 0px;
+    background-color: #c0b5f3;
+}
+
+#searchButton:active {
+    background-color: #a091e2;
+
 }
 
 /* ? ------------------------------- */

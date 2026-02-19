@@ -1,12 +1,12 @@
 class Item {
-    constructor({id, nombre, categoria, precio, imagen, descripcion }) {
-		this.id = id;
+    constructor({ id, nombre, categoria, precio, imagen, descripcion }) {
+        this.id = id;
         this.nombre = nombre;
-		this.categoria = categoria;
+        this.categoria = categoria;
         this.precio = precio;
-		this.imagen = imagen;
-		this.descripcion = descripcion;
-	}
+        this.imagen = imagen;
+        this.descripcion = descripcion;
+    }
 }
 const iphone14 = new Item({
     id: 1,
@@ -42,15 +42,15 @@ const lenovoLegionpro = new Item({
 });
 const ipad = new Item({
     id: 5,
-    nombre:"Ipad Apple 11 pulgadas 128 GB | Chip A16",
+    nombre: "Ipad Apple 11 pulgadas 128 GB | Chip A16",
     categoria: "Tablets",
     precio: 2039000,
     imagen: "img/ipad.png",
     descripcion: "El iPad Apple 11 pulgadas con Chip A16 es un dispositivo tablet de alta gama que ofrece un rendimiento excepcional, una pantalla de alta calidad y una experiencia de usuario intuitiva. Ideal para productividad, entretenimiento y creatividad."
 });
-const xiaomiTablet= new Item({
+const xiaomiTablet = new Item({
     id: 6,
-    nombre:"Xiaomi Tablet Pad 7 8gb/256gb",
+    nombre: "Xiaomi Tablet Pad 7 8gb/256gb",
     categoria: "Tablets",
     precio: 1799900,
     imagen: "img/xiaomipad7.png",
@@ -105,3 +105,40 @@ const appleWatchUltra3 = new Item({
     descripcion: "El Apple Watch Ultra 3 con Correa Alpine es un reloj inteligente de alta gama diseñado para ofrecer un rendimiento excepcional y una experiencia de usuario premium. Con características avanzadas de salud, seguimiento de actividad física y una pantalla vibrante, es el compañero perfecto para aquellos que buscan un dispositivo inteligente para mejorar su estilo de vida."
 });
 const items = [iphone14, galaxyS23Ultra, hpVictus, lenovoLegionpro, ipad, xiaomiTablet, jblTourSmart, sonyWH1000XM5, bose700, jblClip5, samsungGalaxyWatch8, appleWatchUltra3];
+
+// ! Tarjeta y contenido del item
+
+function card(obj) {
+
+    // ? Contenedor
+    const card = document.createElement("article");
+
+    // ? Contenido
+    const img = document.createElement("img");
+    img.src = obj.imagen;
+    img.width = 100;
+    img.height = 100;
+    const footer = document.createElement("section");
+    const title = document.createElement("h4");
+    title.textContent = obj.nombre;
+    const desc = document.createElement("p");
+    desc.textContent = obj.descripcion;
+    const price = document.createElement("h3");
+    price.textContent = obj.precio;
+    const addBtn = document.createElement("button");
+    addBtn.innerHTML = '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+
+    // ? Anidamiento de elementos
+    card.appendChild(img);
+    footer.appendChild(title);
+    footer.appendChild(desc);
+    footer.appendChild(price);
+    footer.appendChild(addBtn);
+    card.appendChild(footer);
+
+    // ? Agregarlo al catálogo
+    const catalog = document.getElementById('catalogo');
+    catalog.appendChild(card);
+}
+
+items.forEach(item => {card(item)});
