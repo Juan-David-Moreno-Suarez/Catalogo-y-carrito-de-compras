@@ -1,3 +1,4 @@
+// ! Construcción de los objetos de los productos
 class Item {
     constructor({ id, nombre, categoria, precio, imagen, descripcion }) {
         this.id = id;
@@ -9,136 +10,331 @@ class Item {
     }
 }
 const iphone14 = new Item({
-    id: 1,
-    nombre: "Iphone 14 Pro Max",
-    categoria: "Smartphones",
-    precio: 3199900,
-    imagen: "img/iphone14promax.png",
-    descripcion: "El iPhone 14 Pro Max de Apple, un dispositivo móvil de alta gama, combina una potencia asombrosa, durabilidad y una multitud de características en un tamaño aún más grande. Es el compañero perfecto para aquellos que buscan la funcionalidad de un iPhone en un formato de lujo y de gran tamaño. Diseño y Pantalla: Al igual que el iPhone 13, el iPhone 14 Pro Max tiene una pantalla con esquinas redondeadas y un diseño curvo. Sin embargo, la medida diagonal de su pantalla es de 6.7 pulgadas en un rectángulo estándar, aunque el área real de visualización es menor. Accesibilidad: El iPhone 14 Pro Max también ofrece funcionalidades de accesibilidad para personas con dificultades visuales, motrices, auditivas y cognitivas, facilitando el uso del dispositivo a una amplia gama de usuarios. Compatibilidad de Archivos y Idiomas: Soporta una variedad de formatos de archivo como .jpg, .pdf, .docx, entre otros, y ofrece soporte para múltiples idiomas y métodos de entrada de texto, lo que refleja su capacidad para ser utilizado globalmente. Sostenibilidad y Medio Ambiente: Apple sigue destacando su compromiso con la sostenibilidad, con el objetivo de crear productos sin extraer recursos de la tierra y alcanzar la neutralidad en emisiones de carbono para el 2030. Estos aspectos resaltan la innovación y el enfoque en la accesibilidad y sostenibilidad ambiental del iPhone 14 Pro Max."
+  id: 1,
+  nombre: "Iphone 14 Pro Max",
+  categoria: "Smartphones",
+  precio: 3199900,
+  imagen: "img/iphone14promax.png",
+  descripcion: "iPhone premium con gran pantalla, alto rendimiento y funciones avanzadas."
 });
+
 const galaxyS23Ultra = new Item({
-    id: 2,
-    nombre: "Samsung Galaxy S23 Ultra",
-    categoria: "Smartphones",
-    precio: 4399900,
-    imagen: "img/samsungs23ultra.png",
-    descripcion: "El Samsung Galaxy S23 Ultra es un dispositivo móvil de alta gama que combina potencia, durabilidad y una multitud de características en un tamaño aún más grande. Es el compañero perfecto para aquellos que buscan la funcionalidad de un smartphone en un formato de lujo y de gran tamaño. Diseño y Pantalla: El Galaxy S23 Ultra presenta una pantalla con esquinas redondeadas y un diseño curvo, con una medida diagonal de 6.8 pulgadas en un rectángulo estándar, aunque el área real de visualización es menor. Accesibilidad: El Galaxy S23 Ultra también ofrece funcionalidades de accesibilidad para personas con dificultades visuales, motrices, auditivas y cognitivas, facilitando el uso del dispositivo a una amplia gama de usuarios. Compatibilidad de Archivos y Idiomas: Soporta una variedad de formatos de archivo como .jpg, .pdf, .docx, entre otros, y ofrece soporte para múltiples idiomas y métodos de entrada de texto, lo que refleja su capacidad para ser utilizado globalmente. Sostenibilidad y Medio Ambiente: Samsung sigue destacando su compromiso con la sostenibilidad, con el objetivo de crear productos sin extraer recursos de la tierra y alcanzar la neutralidad en emisiones de carbono para el 2030. Estos aspectos resaltan la innovación y el enfoque en la accesibilidad y sostenibilidad ambiental del Galaxy S23 Ultra."
+  id: 2,
+  nombre: "Samsung Galaxy S23 Ultra",
+  categoria: "Smartphones",
+  precio: 4399900,
+  imagen: "img/samsungs23ultra.png",
+  descripcion: "Smartphone gama alta con gran pantalla, potencia y cámara destacada."
 });
+
 const hpVictus = new Item({
-    id: 3,
-    nombre: "Hp Victus 15.6 I5 Rtx3050 8gb 512gb Ssd",
-    categoria: "Computadores",
-    precio: 2665845,
-    imagen: "img/hpvictus.png",
-    descripcion: "El Hp Victus es un computador de escritorio con procesador Intel i5, tarjeta gráfica RTX 3050, 8GB de RAM y SSD de 512GB. Ideal para gaming y productividad general. Diseño moderno y eficiente que combina potencia y rendimiento en un solo dispositivo."
+  id: 3,
+  nombre: "Hp Victus 15.6 I5 Rtx3050 8gb 512gb Ssd",
+  categoria: "Computadores",
+  precio: 2665845,
+  imagen: "img/hpvictus.png",
+  descripcion: "Portátil para gaming y productividad con i5, RTX 3050 y SSD 512GB."
 });
+
 const lenovoLegionpro = new Item({
-    id: 4,
-    nombre: "Notebook Lenovo Legion Pro 16 negro 32GB de Ram - 1TB SSD - Intel ULTRA 9 Color Negro",
-    categoria: "Computadores",
-    precio: 12000000,
-    imagen: "img/lenovolegionpro.png",
-    descripcion: "Procesador: Intel Core Ultra 9 275HX. Versión del sistema operativo: 11. Nombre del sistema operativo: Windows. Capacidad de disco SSD: 1 TB. Capacidad total del módulo de memoria RAM: 32 GB. Con pantalla táctil: No. Resolución de la pantalla: 2560 px x 1600 px."
+  id: 4,
+  nombre: "Notebook Lenovo Legion Pro 16 negro 32GB de Ram - 1TB SSD - Intel ULTRA 9 Color Negro",
+  categoria: "Computadores",
+  precio: 12000000,
+  imagen: "img/lenovolegionpro.png",
+  descripcion: "Portátil de alto rendimiento con 32GB RAM, 1TB SSD y pantalla 2K."
 });
+
 const ipad = new Item({
-    id: 5,
-    nombre: "Ipad Apple 11 pulgadas 128 GB | Chip A16",
-    categoria: "Tablets",
-    precio: 2039000,
-    imagen: "img/ipad.png",
-    descripcion: "El iPad Apple 11 pulgadas con Chip A16 es un dispositivo tablet de alta gama que ofrece un rendimiento excepcional, una pantalla de alta calidad y una experiencia de usuario intuitiva. Ideal para productividad, entretenimiento y creatividad."
+  id: 5,
+  nombre: "Ipad Apple 11 pulgadas 128 GB | Chip A16",
+  categoria: "Tablets",
+  precio: 2039000,
+  imagen: "img/ipad.png",
+  descripcion: "iPad 11” con chip A16, ideal para estudiar, trabajar y entretenimiento."
 });
+
 const xiaomiTablet = new Item({
-    id: 6,
-    nombre: "Xiaomi Tablet Pad 7 8gb/256gb",
-    categoria: "Tablets",
-    precio: 1799900,
-    imagen: "img/xiaomipad7.png",
-    descripcion: "El Xiaomi Pad 7 es un tablet de alta gama con pantalla de 12 pulgadas, procesador Snapdragon 8 Gen 1, memoria RAM de 8GB y almacenamiento interno de 256GB. Ideal para entretenimiento, productividad y multitarea."
+  id: 6,
+  nombre: "Xiaomi Tablet Pad 7 8gb/256gb",
+  categoria: "Tablets",
+  precio: 1799900,
+  imagen: "img/xiaomipad7.png",
+  descripcion: "Tablet potente con 8GB RAM y 256GB, pensada para multitarea."
 });
+
 const jblTourSmart = new Item({
-    id: 7,
-    nombre: "JBL Tour Smart",
-    categoria: "Audífonos",
-    precio: 1774900,
-    imagen: "img/jbltoursmart.png",
-    descripcion: "Los JBL Tour Smart son audífonos inalámbricos de alta calidad que ofrecen un sonido excepcional, cancelación activa de ruido y una experiencia de escucha personalizada. Con un diseño elegante y cómodo, son ideales para música, llamadas y entretenimiento en movimiento."
+  id: 7,
+  nombre: "JBL Tour Smart",
+  categoria: "Audífonos",
+  precio: 1774900,
+  imagen: "img/jbltoursmart.png",
+  descripcion: "Audífonos inalámbricos con buen sonido y cancelación de ruido."
 });
+
 const sonyWH1000XM5 = new Item({
-    id: 8,
-    nombre: "Sony WH-1000XM5",
-    categoria: "Audífonos",
-    precio: 2249900,
-    imagen: "img/sony.png",
-    descripcion: "Los Sony WH-1000XM5 son audífonos inalámbricos de alta gama que ofrecen una calidad de sonido excepcional, cancelación activa de ruido líder en la industria y una experiencia de escucha personalizada. Con un diseño elegante y cómodo, son ideales para música, llamadas y entretenimiento en movimiento."
+  id: 8,
+  nombre: "Sony WH-1000XM5",
+  categoria: "Audífonos",
+  precio: 2249900,
+  imagen: "img/sony.png",
+  descripcion: "Audífonos premium con excelente cancelación de ruido y gran audio."
 });
+
 const bose700 = new Item({
-    id: 9,
-    nombre: "Bose Bass Module 700",
-    categoria: "Bocinas",
-    precio: 4489900,
-    imagen: "img/bose700.png",
-    descripcion: "El Bose Bass Module 700 es un subwoofer inalámbrico de alta calidad diseñado para complementar los sistemas de sonido Bose. Ofrece graves profundos y potentes, mejorando la experiencia de audio en películas, música y juegos. Con un diseño elegante y compacto, es fácil de integrar en cualquier configuración de entretenimiento en el hogar."
+  id: 9,
+  nombre: "Bose Bass Module 700",
+  categoria: "Bocinas",
+  precio: 4489900,
+  imagen: "img/bose700.png",
+  descripcion: "Subwoofer inalámbrico con graves potentes para cine y música."
 });
+
 const jblClip5 = new Item({
-    id: 10,
-    nombre: "Bocina Portátil JBL Clip 5 Bluetooth, Negro",
-    categoria: "Bocinas",
-    precio: 129900,
-    imagen: "img/jblclip5.png",
-    descripcion: "La bocina portátil JBL Clip 5 es una opción ideal para disfrutar de música en cualquier lugar. Con una potencia de sonido impresionante y una duración de batería prolongada, es perfecta para actividades al aire libre. Su diseño resistente y portátil la hace ideal para aventuras al aire libre."
+  id: 10,
+  nombre: "Bocina Portátil JBL Clip 5 Bluetooth, Negro",
+  categoria: "Bocinas",
+  precio: 129900,
+  imagen: "img/jblclip5.png",
+  descripcion: "Bocina compacta y portátil con Bluetooth, ideal para salir."
 });
+
 const samsungGalaxyWatch8 = new Item({
-    id: 11,
-    nombre: "Reloj Samsung Galaxy Watch 8 44Mm Gris Oscuro",
-    categoria: "Smartwatches",
-    precio: 1299900,
-    imagen: "img/samsungwatch8.png",
-    descripcion: "El Samsung Galaxy Watch 8 es un reloj inteligente de alta gama que combina un diseño elegante con una amplia gama de funciones. Con una pantalla AMOLED vibrante, seguimiento de salud avanzado y compatibilidad con aplicaciones, es el compañero perfecto para aquellos que buscan un dispositivo inteligente para mejorar su estilo de vida."
+  id: 11,
+  nombre: "Reloj Samsung Galaxy Watch 8 44Mm Gris Oscuro",
+  categoria: "Smartwatches",
+  precio: 1299900,
+  imagen: "img/samsungwatch8.png",
+  descripcion: "Smartwatch con seguimiento de salud, deporte y notificaciones."
 });
+
 const appleWatchUltra3 = new Item({
-    id: 12,
-    nombre: "Apple Watch Ultra 3 Correa Alpine",
-    categoria: "Smartwatches",
-    precio: 4499900,
-    imagen: "img/applewatchultra.png",
-    descripcion: "El Apple Watch Ultra 3 con Correa Alpine es un reloj inteligente de alta gama diseñado para ofrecer un rendimiento excepcional y una experiencia de usuario premium. Con características avanzadas de salud, seguimiento de actividad física y una pantalla vibrante, es el compañero perfecto para aquellos que buscan un dispositivo inteligente para mejorar su estilo de vida."
+  id: 12,
+  nombre: "Apple Watch Ultra 3 Correa Alpine",
+  categoria: "Smartwatches",
+  precio: 4499900,
+  imagen: "img/applewatchultra.png",
+  descripcion: "Reloj premium resistente con funciones avanzadas de salud y deporte."
 });
 const items = [iphone14, galaxyS23Ultra, hpVictus, lenovoLegionpro, ipad, xiaomiTablet, jblTourSmart, sonyWH1000XM5, bose700, jblClip5, samsungGalaxyWatch8, appleWatchUltra3];
 
+// ! Funciones para guardar la selección de productos
+
+// ? Clave del carrito para guardar en localStorage
+const KEY = "carrito";
+
+//? Regresa los elementos guardados en el almacenamiento, o vacío si no hay nada
+function getCartItems() {
+    return JSON.parse(localStorage.getItem(KEY)) || {};
+}
+
+// ? Sube al localStorage los elementos seleccionados
+function uploadCart(cart) {
+    localStorage.setItem(KEY, JSON.stringify(cart));
+}
+
+// ? Agregar un item al carrito
+function addItem(item) {
+    const cart = getCartItems();
+    const id = item.id;
+
+    if (cart[id]) {
+        cart[id].qty++;
+    } else {
+        cart[id] = { item: item, qty: 1 };
+        alert("Agregado al carrito");
+    }
+    uploadCart(cart);
+}
+
+// ? Eliminar un item del carrito
+function removeItem(item) {
+    const cart = getCartItems();
+    const id = item.id;
+    if (cart[id]) {
+        if (cart[id].qty > 1) {
+            cart[id].qty--;
+        } else {
+            delete cart[id]
+            alert("Eliminado del carrito");
+        }
+        uploadCart(cart);
+    } else {
+        alert("No hay elementos en el carrito")
+    }
+}
+function showSubtotal() {
+    const cart = Object.values(getCartItems());
+    subtotal.replaceChildren();
+    cart.forEach(ci => {
+        const subtotalPrice = document.createElement("h4");
+        subtotalPrice.textContent = "$ " + ci.item.precio.toLocaleString('es-ES') + " x " + ci.qty;
+        subtotal.appendChild(subtotalPrice);
+    });
+}
+function showTotal() {
+    const cart = Object.values(getCartItems());
+    const totalPrice = document.createElement("h1");
+    const price = cart.reduce((sum, ci) => sum + ci.item.precio * ci.qty, 0);
+    totalPrice.textContent = "$ " + price.toLocaleString('es-ES');
+    total.replaceChildren();
+    total.appendChild(totalPrice);
+}
+
 // ! Tarjeta y contenido del item
 
-function card(obj) {
-
+function card(obj, parent, qty = null) {
+    let isCheck = Boolean(getCartItems()[obj.id]);
     // ? Contenedor
     const card = document.createElement("article");
+    card.className = "card";
 
     // ? Contenido
     const img = document.createElement("img");
+    img.className = "img";
     img.src = obj.imagen;
-    img.width = 100;
-    img.height = 100;
-    const footer = document.createElement("section");
-    const title = document.createElement("h4");
+
+    const content = document.createElement("section");
+    content.className = "card-content";
+
+    const title = document.createElement("h3");
+    title.className = "card-title";
     title.textContent = obj.nombre;
+
     const desc = document.createElement("p");
     desc.textContent = obj.descripcion;
-    const price = document.createElement("h3");
-    price.textContent = obj.precio;
+
+    const footer = document.createElement("section");
+    footer.className = "card-footer";
+
+    const price = document.createElement("h2");
+    price.textContent = "$ " + obj.precio.toLocaleString('es-ES');
+
+    // ? Botón exclusivo del catálogo
     const addBtn = document.createElement("button");
-    addBtn.innerHTML = '<i class="fa fa-plus-square" aria-hidden="true"></i>';
+    addBtn.className = "addBtn";
+
+    // ? Botones y contenido exclusivos del carrito
+
+    const sumBtn = document.createElement("button");
+    sumBtn.className = "sumBtn";
+    sumBtn.innerHTML = '<i class="fa fa-plus fa-2x" aria-hidden="true"></i>';
+
+    const subsBtn = document.createElement("button");
+    subsBtn.className = "subsBtn";
+    subsBtn.innerHTML = '<i class="fa fa-minus fa-2x" aria-hidden="true"></i>';
+
+    const qtyVal = document.createElement("p");
+    qtyVal.textContent = qty;
+    const modContainer = document.createElement("section");
+    modContainer.className = "modContainer";
+
+
+    function renderIcon() {
+        addBtn.innerHTML = isCheck
+            ? '<i class="fa fa-check fa-2x" aria-hidden="true"></i>'
+            : '<i class="fa fa-plus fa-2x" aria-hidden="true"></i>';
+    }
+
+    renderIcon();
+
+    addBtn.addEventListener('click', () => {
+        isCheck = !isCheck;
+        if (isCheck) {
+            addItem(obj);
+        } else {
+            removeItem(obj);
+        }
+        renderIcon();
+    });
+
+    sumBtn.addEventListener('click', () => {
+        addItem(obj);
+        const cart = getCartItems();
+        qtyVal.textContent = cart[obj.id].qty;
+        showSubtotal();
+        showTotal();
+    });
+
+    subsBtn.addEventListener('click', () => {
+        removeItem(obj);
+        const cart = getCartItems();
+        if (cart[obj.id]) {
+            qtyVal.textContent = cart[obj.id].qty;
+        } else {
+            card.remove();
+        }
+        showSubtotal();
+        showTotal()
+    });
 
     // ? Anidamiento de elementos
-    card.appendChild(img);
-    footer.appendChild(title);
-    footer.appendChild(desc);
-    footer.appendChild(price);
-    footer.appendChild(addBtn);
-    card.appendChild(footer);
+    content.appendChild(title);
+    content.appendChild(desc);
 
-    // ? Agregarlo al catálogo
-    const catalog = document.getElementById('catalogo');
-    catalog.appendChild(card);
+    footer.appendChild(price);
+
+    if (qty !== null) {
+        modContainer.appendChild(subsBtn);
+        modContainer.appendChild(qtyVal);
+        modContainer.appendChild(sumBtn);
+        footer.appendChild(modContainer);
+    }
+    else {
+        footer.appendChild(addBtn);
+    }
+
+    content.appendChild(footer)
+
+    card.appendChild(img);
+    card.appendChild(content);
+
+    // ? Agregarlo en el padre
+
+    parent.appendChild(card);
 }
 
-items.forEach(item => {card(item)});
+// ! Renderizar todos los productos en el catálogo
+const catalog = document.getElementById('catalogo');
+if (catalog) {
+    items.forEach(item => { card(item, catalog) });
+}
+
+// ! Renderizar los elementos escogidos en el carrito
+const carrito = document.getElementById('carrito');
+if (carrito) {
+    const cartItems = Object.values(getCartItems());
+    cartItems.forEach(ci => { card(ci.item, carrito, ci.qty) });
+}
+
+// ! Renderizar el subtotal de productos
+const subtotal = document.getElementById('subtotal');
+if (subtotal) {
+    showSubtotal();
+}
+
+// ! Renderizar el total de productos
+const total = document.getElementById('total');
+if (total) {
+    showTotal();
+}
+
+// ! Agregar acción al botón de búsqueda
+
+// ? Función de búsqueda
+function searchProduct(name) {
+    const query = name.trim().toLowerCase();
+    return items.filter(product => product.nombre.toLowerCase().includes(query));
+}
+
+function renderCatalog(lista) {
+  const catalog = document.getElementById("catalogo");
+  catalog.replaceChildren();
+  lista.forEach(item => card(item, catalog));
+}
+
+document.getElementById("searchButton").addEventListener("click", () => {
+  const q = document.getElementById("searchBar").value;
+  const filtrados = searchProduct(q);
+  renderCatalog(filtrados);
+});

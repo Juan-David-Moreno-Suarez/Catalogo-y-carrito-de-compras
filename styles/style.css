@@ -1,16 +1,33 @@
 :root {
     --color1: #461b6e;
+    --color2: #7139b9;
 }
+
+@media (width < 1100px) {
+    .card h2,h3 {
+        font-size: 14px;
+    }
+}
+
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* ? --------- Header --------------- */
 header {
-    background-color: #c098f5;
+    background-color: var(--color2);
     padding: 20px;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     section {
         display: flex;
         width: 40%;
@@ -21,14 +38,17 @@ nav {
         padding-left: 20px;
         box-shadow: 4px 3px var(--color1);
     }
+
     section:hover {
         border: 2px solid var(--color1);
     }
+
     section:focus-within {
         border: 2px solid var(--color1);
     }
+
     a {
-        color: var(--color1);
+        color: rgb(252, 244, 233);
     }
 }
 
@@ -40,9 +60,12 @@ nav {
     font-size: 20px;
     background-color: transparent;
 }
+
 #searchBar::placeholder {
     font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #searchBar:focus {
     outline: none;
 }
@@ -54,6 +77,10 @@ nav {
     background-color: #c0b5f3;
 }
 
+#searchButton:hover {
+    cursor: pointer;
+}
+
 #searchButton:active {
     background-color: #a091e2;
 
@@ -62,5 +89,82 @@ nav {
 /* ? ------------------------------- */
 
 /* * --------- Main --------------- */
+main h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+
+}
 
 /* * ------------------------------- */
+/* ! ------- Tarjeta de producto -----*/
+.card {
+    border: 3px solid var(--color2);
+    overflow: hidden;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    p {
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+.card:hover {
+    border: 3px solid var(--color1);
+
+}
+
+.img {
+    width: 200px;
+    aspect-ratio: 1;
+}
+
+.card-content {
+    background-color: #edd5fd;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-footer {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-title {
+    width: 80%;
+    text-align: center;
+}
+
+.addBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+}
+
+.addBtn:active {
+    background-color: #a091e2;
+}
+
+/* ! ----------------------------------*/

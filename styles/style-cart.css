@@ -1,16 +1,27 @@
 :root {
     --color1: #461b6e;
+    --color2: #7139b9;
 }
+
+* {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 /* ? --------- Header --------------- */
 header {
-    background-color: #c098f5;
+    background-color: var(--color2);
     padding: 20px;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     section {
         display: flex;
         width: 40%;
@@ -21,14 +32,17 @@ nav {
         padding-left: 20px;
         box-shadow: 4px 3px var(--color1);
     }
+
     section:hover {
         border: 2px solid var(--color1);
     }
+
     section:focus-within {
         border: 2px solid var(--color1);
     }
+
     a {
-        color: var(--color1);
+        color: rgb(252, 244, 233);
     }
 }
 
@@ -40,9 +54,12 @@ nav {
     font-size: 20px;
     background-color: transparent;
 }
+
 #searchBar::placeholder {
     font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #searchBar:focus {
     outline: none;
 }
@@ -51,10 +68,132 @@ nav {
     height: 100%;
     aspect-ratio: 1;
     border: 0px;
+    background-color: #c0b5f3;
+}
+
+#searchButton:hover {
+    cursor: pointer;
+}
+
+#searchButton:active {
+    background-color: #a091e2;
+
 }
 
 /* ? ------------------------------- */
 
 /* * --------- Main --------------- */
+main > article {
+    display: flex;
+}
+main > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#carrito {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    border-right: 1px solid var(--color1);
+    margin-right: 20px;
 
+}
+#payBtn {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(181, 250, 238);
+}
 /* * ------------------------------- */
+/* ! ------- Tarjeta de producto -----*/
+.card {
+    border: 3px solid var(--color2);
+    overflow: hidden;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    p {
+        text-align: center;
+        padding: 5px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.card:hover {
+    border: 3px solid var(--color1);
+
+}
+
+.img {
+    width: 200px;
+    aspect-ratio: 1;
+}
+
+.card-content {
+    background-color: #edd5fd;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-footer {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-title {
+    width: 80%;
+    text-align: center;
+}
+
+.modContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.addBtn,.sumBtn,.subsBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+}
+.sumBtn:hover {
+    cursor: pointer;
+}
+.subsBtn:hover {
+    cursor: pointer;
+}
+
+.addBtn:active {
+    background-color: #a091e2;
+}
+
+.sumBtn:active {
+    background-color: #a091e2;
+}
+
+.subsBtn:active {
+    background-color: #a091e2;
+}
+
+/* ! ----------------------------------*/
